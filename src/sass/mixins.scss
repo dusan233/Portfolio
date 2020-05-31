@@ -1,0 +1,32 @@
+$breakpoint-small: 750px;
+$breakpoint-med-small: 1080px;
+$breakpoint-med: 1375px;
+
+@mixin screen($size, $pixels: $breakpoint-small) {
+  @if $size == "med-small" {
+    @media screen and (min-width: $breakpoint-small) {
+      @content;
+    }
+  } @else if $size == "med" {
+    @media screen and (min-width: $breakpoint-med-small) {
+      @content;
+    }
+  } @else if $size == "large" {
+    @media screen and (min-width: $breakpoint-med) {
+      @content;
+    }
+  } @else if $size == "custom" {
+    @media screen and (min-width: $pixels + px) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+@mixin flex($jContent: center, $aItems: center, $direction: row) {
+  display: flex;
+  justify-content: $jContent;
+  align-items: $aItems;
+  flex-direction: $direction;
+}

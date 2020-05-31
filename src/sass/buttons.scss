@@ -1,0 +1,24 @@
+.button-link {
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-right: 20px;
+  background: #ffbf4e;
+  display: inline-block;
+  text-decoration: none;
+  color: $black;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-top: 10px;
+  &:hover {
+    color: $secondary;
+  }
+}
+.button-link-sec {
+  @extend .button-link;
+  background: $secondary;
+  color: #ffbf4e;
+  border: 1px solid #ffbf4e;
+  &:hover {
+    color: #ffbf4e;
+  }
+}
