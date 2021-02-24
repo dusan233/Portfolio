@@ -6,6 +6,7 @@ import movieProjectImage from "../assets/Optimized-movies.jpg";
 import recipesProjectImage from "../assets/Optimized-recipe.jpg";
 import restaurantImage from "../assets/Optimized-Screenshot_1.jpg";
 import spotifyProjectImage from '../assets/Spoty_cover _img.png';
+import rentorImage from '../assets/rentor.png';
 
 const Projects = () => {
   return (
@@ -18,6 +19,13 @@ const Projects = () => {
           to="https://spoty-client.web.app/login"
           github="https://github.com/dusan233/spoty_client"
           info="Spotify clone application made with React, Spotify api and Node.js"
+        />
+        <ProjectCard
+          image={rentorImage}
+          name="Rentor"
+          to="https://rentor-1.web.app/"
+          github="https://github.com/dusan233/rentor-Angular-app"
+          info="Angular application for searching for perfect rental anywhere in America. App uses realtor api and mapbox api for displaying interactive map."
         />
         <ProjectCard
           image={recipesProjectImage}
